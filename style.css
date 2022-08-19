@@ -81,7 +81,7 @@ h3 {
 .ourservices img {
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+
   text-align: center;
 
 }
@@ -90,6 +90,7 @@ h3 {
 
 .services {
   box-sizing: border-box;
+  margin-top: 0%;
 }
 
 .ourservices {
@@ -102,6 +103,7 @@ h3 {
   color: black;
   font-family: 'Pacifico', Courier, monospace;
   font-size: x-large;
+  margin-bottom: 5%;
 }
 
 .image {
@@ -169,21 +171,21 @@ h4 {
 }
 
 #map {
-  margin: 50px;
-  float: right;
+  margin: 30px;
   width: 500px;
   height: 400px;
-
+  float: right;
+  
 }
 
 .aboutus {
-
-  height: 400px;
-  
+  width: 900px;
   flex-wrap: wrap;
   height: 400px;
   flex-direction: row;
   padding-left: 10px;
+  /* overflow: hidden; */
+  margin-left: 0px;
 }
 
 .aboutinfo {
