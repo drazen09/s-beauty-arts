@@ -183,7 +183,6 @@ h4 {
   height: 400px;
   flex-direction: row;
   padding-left: 10px;
-  /* overflow: hidden; */
   margin-left: 0px;
 }
 
@@ -206,6 +205,6 @@ h4 {
   background-size: cover;
   height: 400px;
   text-align: center;
-  
+  clear: both;
 }
 
