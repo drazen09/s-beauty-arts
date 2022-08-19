@@ -170,21 +170,17 @@ h4 {
   text-decoration: underline;
 }
 
-#map {
-  margin: 30px;
-  width: 500px;
-  height: 400px;
-  float: right;
-  clear: right;
-}
 
 .aboutus {
+  display: flex;
   width: 900px;
   flex-wrap: wrap;
   height: 400px;
   flex-direction: row;
   padding-left: 10px;
   margin-left: 0px;
+  border: 10px black ridge;
+  justify-content: flex-end;
 }
 
 .aboutinfo {
@@ -194,10 +190,18 @@ h4 {
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
   width: 900px;
   height: 400px;
+  /* align-self: flex-end; */
+}
+
+.map {
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+ 
 }
 
 .mainfooter {
