@@ -179,7 +179,7 @@ h4 {
 .aboutus {
 
   height: 400px;
-  display: flex;
+  
   flex-wrap: wrap;
   height: 400px;
   flex-direction: row;
