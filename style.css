@@ -181,6 +181,7 @@ h4 {
   width: 900px;
   flex-wrap: wrap;
   height: 400px;
+  display: flex;
   flex-direction: row;
   padding-left: 10px;
   margin-left: 0px;
