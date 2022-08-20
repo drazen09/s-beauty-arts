@@ -171,7 +171,7 @@ h4 {
 }
 
 
-.aboutus {
+/* .aboutus {
   display: flex;
   width: 900px;
   flex-wrap: wrap;
@@ -192,18 +192,18 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
   /* display: inline-block; */
-  text-align: center;
+  /* text-align: center;
   width: 900px;
   height: 400px;
   /* align-self: flex-end; */
-}
+/* }
 
 .map {
   margin: 30px;
   width: 200px;
   height: 200px;
  
-}
+} */
 
 .mainfooter {
 
@@ -214,3 +214,28 @@ h4 {
   clear: both;
 }
 
+.box{
+  
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+}
+.box1 {
+  background-image: url(images/aboutusbackground.png);
+  background-size: cover;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 400px; 
+   width: 900px;
+   margin-left: 15px;
+   margin: 10px;
+  text-align: center;
+  flex:75%
+
+
+}
+
+
+.box2{
+flex:25%
+
+}
