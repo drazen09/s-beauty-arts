@@ -170,41 +170,6 @@ h4 {
   text-decoration: underline;
 }
 
-
-/* .aboutus {
-  display: flex;
-  width: 900px;
-  flex-wrap: wrap;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  padding-left: 10px;
-  margin-left: 0px;
-  border: 10px black ridge;
-  justify-content: flex-end;
-}
-
-.aboutinfo {
-  background-image: url(images/aboutusbackground.png);
-  background-size: cover;
-  text-align: center;
-  object-fit: contain;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px;
-  /* display: inline-block; */
-  /* text-align: center;
-  width: 900px;
-  height: 400px;
-  /* align-self: flex-end; */
-/* }
-
-.map {
-  margin: 30px;
-  width: 200px;
-  height: 200px;
- 
-} */
-
 .mainfooter {
 
   background-image: url(images/footerbackground.jpg);
@@ -228,9 +193,7 @@ h4 {
   margin: 15px;
   text-align: center;
   float: left;
-margin-left: 30px;
-  
-
+ margin-left: 30px;
 }
 
 
