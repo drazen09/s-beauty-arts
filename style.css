@@ -216,8 +216,7 @@ h4 {
 
 .box{
   
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
+  height: 400px;
 }
 .box1 {
   background-image: url(images/aboutusbackground.png);
@@ -225,17 +224,20 @@ h4 {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px; 
-   width: 900px;
-   margin-left: 15px;
-   margin: 10px;
+  width: 900px;
+  margin: 15px;
   text-align: center;
-  flex:75%
-
+  float: left;
+margin-left: 30px;
+  
 
 }
 
 
 .box2{
-flex:25%
-
+  background-clip: border-box;
+width: 500px;
+height: 400px;
+float: right;
+margin: 20px;
 }
