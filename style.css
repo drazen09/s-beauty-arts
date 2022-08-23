@@ -211,12 +211,12 @@ margin: 20px;
 }
 
 .mainfooter{
-  margin-top: 20%;
+  margin-top: 22%;
+  box-sizing: border-box;
 }
 
 .footersection {
   width: 400px;
-  background-color: #4CAF50;
   margin: 30px;
   text-align: center;
 }
