@@ -35,28 +35,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Kaushan+Script&family=League+Spartan&family=Lobster&family=Pacifico&family=Playfair+Display&family=Seaweed+Script&family=Uchen&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
     <title>S Beauty Arts | Home</title>
     <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="ourservices.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
-    <main>
-
-        <div class="head">
-            <h1>S Beauty Arts</h1>
-
-
-            <div class="nav-bar">
-                <a href="#">Call Now</a>
-                <a href="#">Gallery</a>
-                <a href="#">About Us</a>
-                <a href="#">Home</a>
+     <header>
+        <nav class="navbar">
+          <div class="brand-title">S Beauty Arts</div>
+          <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+          </a>
+            <div class="navbar-links">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
+
+        <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
         
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+        })
+
+        </script>
+    </header>
+    <main>
         <div class="introsection">
             <div class="container-fluid">
                 <div class="row">
@@ -69,116 +86,93 @@
             </div>
         </div>
 
-
-        <br>
-        <div class="services">
-            <h3>Our services</h3>
-            <div class="ourservices">
-                <div class="ourservices-image">
-                    <div class="image-container">
-                        <img src="images/makeup1.jpg" alt="Makeup" class="imagebox" style="width:100%">
-                        <a href="#">
-                            <div class="middle">
-                                <div class="text">Makeup</div>
-                            </div>
-                        </a>
-                    </div>
+        <div class="wrapper">
+            <h1>Our services</h1>
+            <p id="gg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nostrum sed, 
+                atque sapiente repellat ipsam!</p>
+              <div class="content-box">
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-lg"></i>
+                    <h2>Marketing services</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, h
+                        ic blanditiis ad expedita sapiente consequuntur.</p>
                 </div>
-                <p>Makeup</p>
-            </div>
 
-
-
-            <div class="ourservices">
-                <div class="ourservices-image">
-                    <div class="image-container">
-                        <img src="images/haircut1.jpg" alt="Haircut and styling" class="imagebox"
-                            style="width:100%">
-                        <a href="#">
-                            <div class="middle">
-                                <div class="text">Haircut and styling</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="card">
+                    <i class="bx bx-line-chart bx-lg"></i>
+                    <h2>24/7 call center services</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, h
+                        ic blanditiis ad expedita sapiente consequuntur.</p>
                 </div>
-                <p>Haircut and Styling</p>
-            </div>
 
-            <div class="ourservices">
-                <div class="ourservices-image">
-                    <div class="image-container">
-                        <img src="images/skincare1.jpg" alt="Body Care" class="imagebox" style="width:100%">
-                        <a href="#">
-                            <div class="middle">
-                                <div class="text">Body Care</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="card">
+                    <i class="bx bx-laptop bx-lg"></i>
+                    <h2>web app services</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, h
+                        ic blanditiis ad expedita sapiente consequuntur.</p>
                 </div>
-                <p>Body Care</p>
-            </div>
-            <br>
-            
+              </div>  
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-<br>
-<br>
-        
         <div class="box">
             <div class="pack">
                 <div class="box1">
-                    <h4>budbak</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero minus optio eveniet reiciendis quis similique! Magnam molestiae quia veniam vitae minus iure in corporis repellendus totam facilis nesciunt reprehenderit eveniet perspiciatis, atque ea. Beatae ducimus recusandae possimus magni facere distinctio, suscipit dolores itaque quia odio corporis sit facilis nostrum modi aperiam quae error nam, sunt ut animi. Laborum nostrum explicabo tempore, id quas, error minus exercitationem adipisci officia quae sint nam consectetur, et neque ad maxime illo provident suscipit numquam aspernatur hic deserunt eveniet vitae natus. Placeat tempora ullam ex voluptas praesentium? Dignissimos aliquam perspiciatis, harum provident iure accusamus illo delectus quae natus dicta tempora repellat maiores eos laudantium aliquid adipisci quibusdam ut nesciunt archi</p>
+                    <h4 >budbak</h4>
+                    <p class="about-us-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero minus optio eveniet reiciendis quis similique! Magnam molestiae quia veniam vitae minus iure in corporis repellendus totam facilis nesciunt reprehenderit eveniet perspiciatis, atque ea. Beatae ducimus recusandae possimus magni facere distinctio, suscipit dolores itaque quia odio corporis sit facilis nostrum modi aperiam quae error nam, sunt ut animi. Laborum nostrum explicabo tempore, id quas, error minus exercitationem adipisci officia quae sint nam consectetur, et neque ad maxime illo provident suscipit numquam aspernatur hic deserunt eveniet vitae natus. Placeat tempora ullam ex voluptas praesentium? Dignissimos aliquam perspiciatis, harum provident iure accusamus illo delectus quae natus dicta tempora repellat maiores eos laudantium aliquid adipisci quibusdam ut nesciunt archi</p>
                 </div>
 
             <div class="box2">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14292.719934998086!2d74.6536839!3d26.4176678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23b95f2895d114c5!2sS%20Beauty%20Arts!5e0!3m2!1sen!2sin!4v1659247402344!5m2!1sen!2sin"
+                    class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14292.719934998086!2d74.6536839!3d26.4176678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23b95f2895d114c5!2sS%20Beauty%20Arts!5e0!3m2!1sen!2sin!4v1659247402344!5m2!1sen!2sin"
                     width=100% height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
             </div>
         </div>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-            <div class="mainfooter">
-                <div class="footersection adress" >
-                    <h5>adress</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt odio doloribus quibusdam ratione nulla architecto non nam accusantium nemo, officiis eum eos! Delectus quod quia qui odit sapiente rem?</p>
-                </div>
-                <div class="footersection aboutus" >
-                    <h5>about us</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit vitae amet doloremque expedita modi pariatur inventore ab perferendis, illum, soluta nisi quam suscipit, consectetur dolor fuga? Unde ducimus fugit aspernatur!
-                    </p>
-                </div>
-                <div class="footersection timing" >
-                    <h2>timing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo est exercitationem saepe amet sequi magni eveniet incidunt perferendis illum voluptate consequuntur pariatur, consequatur velit rerum, numquam et dolores nobis.</p>
-                </div>
-                <div class="footersection contact" >
-                    <h5>contact</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quisquam quis, quibusdam veritatis reprehenderit natus officia labore sapiente nesciunt quia esse excepturi recusandae inventore voluptates cumque necessitatibus nisi omnis corporis?</p>
-                </div>
-
-            </div>
-        
-
-
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-3x" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
