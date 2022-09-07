@@ -49,14 +49,14 @@
 
 .card h2{
     margin-bottom:1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 }
 
 .card p{
     color:#6c757d;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .card:hover i,
