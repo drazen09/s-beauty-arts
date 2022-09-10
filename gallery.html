@@ -9,11 +9,46 @@
         rel="stylesheet">
     <title>Gallery | S Beauty Arts |</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css files/header.css">
 </head>
 <body>
+
+
+    
+    <header>
+        <nav class="navbar">
+          <div class="brand-title">S Beauty Arts</div>
+          <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+          </a>
+            <div class="navbar-links">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+        })
+
+        </script>
+    </header>
+
+    
     <h2>We're coming up soon
         <br>
         Hold On!     
     </h2>
+
 </body>
 </html>

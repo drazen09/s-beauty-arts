@@ -1,0 +1,111 @@
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    box-sizing: border-box;
+}
+
+.wrapper h1{
+    font-size:5rem;
+    color: rgb(255, 0, 82);
+    margin: 2.5rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+#gg{
+    font-size: 1.5rem;
+}
+.content-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.card{
+    min-height: 22rem;
+    width:32rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 1rem 0.5rem;
+    box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+    transition:0.3s ;
+}
+
+.card i{
+    margin: 2rem;
+    color: #ff5724;
+
+}
+
+.card h2{
+    margin-bottom:1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card p{
+    color:#6c757d;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+    color: #f2f2f2;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                              rgba(255,28,8,0.8)0%,
+                             rgba(255,0,82,0.8)100%),
+                             url('images/haircut\ and\ styling.jpg');
+    background-size: cover;                          
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                              rgba(255,28,8,0.8)0%,
+                             rgba(255,0,82,0.8)100%),
+                             url('images/Body\ Care.jpg');
+    background-size: cover;                          
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                              rgba(255,28,8,0.8)0%,
+                             rgba(255,0,82,0.8)100%),
+                             url('images/cosmetics.jpg');
+    background-size: cover;                          
+}
+
+
+@media(max-width:991px){
+    .wrapper{
+        padding: 2.5rem;
+    }
+
+    .wrapper h1{
+        font-size: 4.5em;
+        font-weight: 600;
+    }
+
+    .content-box{
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    .card{
+        min-width: 30rem;
+        margin: 1.5rem auto;
+    }
+}
