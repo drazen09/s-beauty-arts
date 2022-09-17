@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     position: relative;
@@ -6,6 +7,7 @@
     background-color: #333;
     color: white;
     min-height: 7rem;
+    
   }
   
   .brand-title {
