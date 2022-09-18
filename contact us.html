@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S beauty Arts | Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="css files/header.css">
+    <link rel="stylesheet" href="css files/footer.css">
+</head>
+<body>
+    <nav style="background-color:black;color: white;position: relative;">
+        <div class="brand-title" style="padding-left:15px;">
+            <h1>S Beauty Arts</h1></div>
+        <a href="#" class="toggle-button" style="height: 25px;top:40px">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+        </a>
+          <div class="navbar-links">
+              <ul>
+              <li><a href="index.html" style="color: white;">Home</a></li>
+              <li><a href="gallery.html" style="color: white;">Gallery</a></li>       
+              <li><a href="#bookmark" style="color: white;">About Us</a></li>        
+              <li><a href="contact us.html" style="color: white;">Contact Us</a></li>
+              </ul>
+
+          </div>
+      </nav>
+
+      <script type="text/javascript">
+              const toggleButton = document.getElementsByClassName('toggle-button')[0]
+              const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+              
+              toggleButton.addEventListener('click', () => {
+              navbarLinks.classList.toggle('active')
+              })
+
+              window.addEventListener("scroll",function () {
+                  var header = document.querySelector("nav");
+                  header.classList.toggle("sticky", window.scrollY >0);
+              })
+      </script>
+
+
+    <div class="contactus">
+        <div class="title">
+            <h2>Get in touch</h2>
+        </div>
+        <div class="box">
+            <!--form-->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form >
+                    <div class="formbox">
+                        <div class="row50">
+                            <div class="inputbox">
+                                <span>first name</span>
+                                <input type="text" placeholder="john">
+                            </div>
+                            <div class="inputbox">
+                                <span>last name</span>
+                                <input type="text" placeholder="doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputbox">
+                                <span>Email</span>
+                                <input type="text" placeholder="john@gmail.com">
+                            </div>
+                            <div class="inputbox">
+                                <span>mobile</span>
+                                <input type="text" placeholder="=9152113132">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputbox">
+                                <span>Message</span>
+                                <textarea placeholder="write your message here"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputbox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <!--info box-->
+            <div class="contact info">
+                <h3>Contact info</h3>
+                <div class="infobox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Bolo zuba kesari , Delhi</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="#">lorenipsum@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:565656565">565656565</a>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+
+
+            <!--map box-->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57170.87964085119!2d74.653684!3d26.417668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23b95f2895d114c5!2sS%20Beauty%20Arts!5e0!3m2!1sen!2sin!4v1663514903147!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
