@@ -16,6 +16,7 @@ body {
 }
 
 .introsection {
+  position: relative;
   background-image: url('images/introbg.jpg');
   background-position: bottom !important;
   background-repeat: no-repeat;
