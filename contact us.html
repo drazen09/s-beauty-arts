@@ -22,7 +22,7 @@
               <ul>
               <li><a href="index.html" style="color: white;">Home</a></li>
               <li><a href="gallery.html" style="color: white;">Gallery</a></li>       
-              <li><a href="#bookmark" style="color: white;">About Us</a></li>        
+              <li><a href="index.html#bookmark" style="color: white;">About Us</a></li>        
               <li><a href="contact us.html" style="color: white;">Contact Us</a></li>
               </ul>
 
@@ -52,12 +52,12 @@
             <!--form-->
             <div class="contact form">
                 <h3>Send a Message</h3>
-                <form >
+                <form onsubmit="sendEmai(); reset();return false;">
                     <div class="formbox">
                         <div class="row50">
                             <div class="inputbox">
                                 <span>first name</span>
-                                <input type="text" placeholder="john">
+                                <input type="text" placeholder="john" id="name">
                             </div>
                             <div class="inputbox">
                                 <span>last name</span>
@@ -68,18 +68,18 @@
                         <div class="row50">
                             <div class="inputbox">
                                 <span>Email</span>
-                                <input type="text" placeholder="john@gmail.com">
+                                <input type="text" placeholder="john@gmail.com" id="email">
                             </div>
                             <div class="inputbox">
                                 <span>mobile</span>
-                                <input type="text" placeholder="=9152113132">
+                                <input type="text" placeholder="=9152113132" id="phone">
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputbox">
                                 <span>Message</span>
-                                <textarea placeholder="write your message here"></textarea>
+                                <textarea placeholder="write your message here" id="message"></textarea>
                             </div>
                         </div>
 
@@ -126,6 +126,25 @@
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmai(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "manthanuttarwar18@gmail.com",
+            Password : "AC2E3A41552A5084B4E75E7B6A6C810506DE",
+            To : 'sarikauttarwar32@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New contact form",
+            Body : "Name" + document.getElementById("name").value +
+            "<br> Email: " +document.getElementById("email").value +
+            "<br> Phone no.: " +document.getElementById("phone").value+
+            "<br> message: " +document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
 </body>
 </html>
