@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 
 nav {
     display: flex;
@@ -12,6 +15,7 @@ nav {
     min-height: 7rem;
     transition: 0.6s;
     z-index: 10000;
+    padding: 20px;
   }
   
   .sticky{
