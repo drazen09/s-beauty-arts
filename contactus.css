@@ -8,6 +8,7 @@
 body{
     background: linear-gradient(90deg,#0e2159 0%,#590e35 30%, #f5d103 30%,#f5e103 100%);
     font-family: 'poppins',sans-serif;
+    font-size: 130%;
 }
 
 .contactus{
@@ -192,7 +193,7 @@ body{
 /* responsive */
 @media(max-width:1100px){
     body{
-        background: #03a9f5;
+        background: linear-gradient(90deg, #f5d103 30%,#f5e103 100%);
     }
     .contactus{
         padding: 20px;
