@@ -52,6 +52,10 @@ html{
     font-size: small;
 }
 
+.content-box h3{
+    color: black;
+}
+
 .content-box h3, a:link, a:visited {
     text-decoration: none;
     margin-top: 1rem;
